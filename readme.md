@@ -1,10 +1,10 @@
 #### How to use FaceSDK on Debian
 1. Download and install Debian on VMware, recommend this version http://cdimage.debian.org/debian-cd/8.5.0/multi-arch/iso-cd/debian-8.5.0-amd64-i386-netinst.iso
 2. Follow the below commands to install OpenCV2.4  
-`
-user1@debian:~/work$ sudo apt-get udpate<br>
-user1@debian:~/work$ sudo apt-get install libopencv-dev<br>
-`
+	`
+	user1@debian:~/work$ sudo apt-get udpate</br>
+	user1@debian:~/work$ sudo apt-get install libopencv-dev</br>
+	`
 3. Get FaceSDK from github  
 `
 user1@debian:~/work$ git clone git@github.azc.ext.hp.com:qian-lin/FaceSDK_Debian.git  
