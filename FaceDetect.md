@@ -15,33 +15,32 @@ FaceDetect can detect faces from camera, video or image. the output is the bound
 <h2 id="Interface_Design" >Interface Design</h2>
 HPFaceDetectorWarpper is a class which provide Init and DetectFaces functions.
 
-* <span id="HPFaceDetectorWarpper"> HPFaceDetectorWarpper constructor</span>  
+* <h4 id="HPFaceDetectorWarpper"> HPFaceDetectorWarpper constructor</h4>  
 construct HPFaceDetectorWarpper
-```C++
-HPFaceDetectorWarpper::HPFaceDetectorWarpper(bool bMode = true);
-```
+  ```C++
+  HPFaceDetectorWarpper::HPFaceDetectorWarpper(bool bMode = true);
+  ```
    * `bMode` if true,will Init with video mode, if false, Init with normal mode,default true
 
-
-* <span id="Init"> Init</span>  
+* <h4 id="Init"> Init</h4>  
 Init HPFaceDetectorWarpper
-```C++
-int HPFaceDetectorWarpper::Init(bool bHalfProfile = true, bool bProfile = false, bool bRot = true)
-```
-   * `bHalfProfile` if true,will xxxx, if false, xxx , default true
-   * `bProfile` if true,will xxxx, if false, xxx , default false
-   * `bRot` if true,will xxxx, if false, xxx , default false
-   * `return value` if 0 succeed, else failed
+  ```C++
+  int HPFaceDetectorWarpper::Init(bool bHalfProfile = true, bool bProfile = false, bool bRot = true)
+  ```
+     * `bHalfProfile` if true,will xxxx, if false, xxx , default true
+     * `bProfile` if true,will xxxx, if false, xxx , default false
+     * `bRot` if true,will xxxx, if false, xxx , default false
+     * `return value` if 0 succeed, else failed
 
-* <span id="DetectFaces"> DetectFaces</span>   
+* <h4 id="DetectFaces"> DetectFaces</h4>   
 Begin to detect faces
-```C++
-int DetectFaces(unsigned char* ucImgData, const int nImgWidth, const int nImgHeight, FaceArray& faceArray)
-```
-   * `ucImgData` image buffer,it is from `cv::Mat`
-   * `nImgWidth` image's width
-   * `nImgHeight` image's height
-   * `faceArray` output face information array
+  ```C++
+  int DetectFaces(unsigned char* ucImgData, const int nImgWidth, const int nImgHeight, FaceArray& faceArray)
+  ```
+     * `ucImgData` image buffer,it is from `cv::Mat`
+     * `nImgWidth` image's width
+     * `nImgHeight` image's height
+     * `faceArray` output face information array
 
 <h2 id="How_to_use">How to use FaceDetect Library on Windows</h2>
 1. In `Visual Studio 2015`, create a empty project
