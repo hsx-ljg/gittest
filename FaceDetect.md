@@ -7,7 +7,7 @@
       * [Init](#Init)
       * [DetectFaces](#DetectFaces)
 * [How to use FaceDetect Library on Windows](#How_to_use)
-* [How to run FaceDetect Demo](#How-to-run-FaceDetect-Demo)
+* [How to run FaceDetect Demo](#how_to)
 
 <span id="About_FaceDetect"></span>
 ## About FaceDetect
@@ -56,6 +56,6 @@ int DetectFaces(unsigned char* ucImgData, const int nImgWidth, const int nImgHei
 5. Configure dependency Library ,Configuration Page ->Linker -> Input -> Additional dependency -> `FaceDetect.lib`
 6. Configure dependency Library directory ,Configuration Page ->Linker -> General -> Additional dependency directory-> `..\lib\x64`
 
-## How to run FaceDetect Demo
+<h2 id='how_to'> How to run FaceDetect Demo </h2>
 1. Enter `FaceDetect\bin\x64\Release` directory
 2. Double click test.bat or FaceDetectTest.exe
