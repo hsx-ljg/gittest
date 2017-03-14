@@ -104,6 +104,7 @@ void LandmarkDetect::track49(cv::Mat& meanShape, cv::Mat& modelShape,  cv::Mat& 
     ```
         * `sDataPath` it is binary model directory
         * `-i` input image path
+
   * test_videocapture_image.bat, the input is from image path
 
     ```
