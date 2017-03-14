@@ -21,7 +21,7 @@ LandmarkDetect can detect and track faces from camera, video or image. the outpu
 
 
 * <h4 id="LandmarkDetect"> LandmarkDetect</h4>  
-LandmarkDetect is a interface class which provide read model,get meanShape,get Landmark points number, dect and track  functions.
+LandmarkDetect is a interface class which provide read model,get meanShape,get Landmark points number, detect and track  functions.
 
 * <h4 id="readBinModel"> readBinModel</h4>  
 Read binary model
@@ -85,7 +85,8 @@ void LandmarkDetect::track49(cv::Mat& meanShape, cv::Mat& modelShape,  cv::Mat& 
 <h2 id="How_to">How to run LandmarkDetect Demo on Windows</h2>
 1. Enter `LandmarkDetect\bin\x64\Release` directory
 2. Check script and update argument
-     * test_input_camera.bat, the input is from camera
+     * test_input_camera.bat, the input is from camera  
+
       ```
       $ cat test_input_camera.bat
       @set sDataPath=..\..\..\..\..\Data
@@ -94,6 +95,7 @@ void LandmarkDetect::track49(cv::Mat& meanShape, cv::Mat& modelShape,  cv::Mat& 
         * `sDataPath` it is binary model directory
 
   * test_input_image.bat, the input is from image path
+
     ```
     $ cat test_input_image.bat
     @set sDataPath=..\..\..\..\..\Data
@@ -103,6 +105,7 @@ void LandmarkDetect::track49(cv::Mat& meanShape, cv::Mat& modelShape,  cv::Mat& 
         * `sDataPath` it is binary model directory
         * `-i` input image path
   * test_videocapture_image.bat, the input is from image path
+
     ```
     $ cat test_videocapture_image.bat
     @set sDataPath=..\..\..\..\..\Data
